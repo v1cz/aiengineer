@@ -1,0 +1,9 @@
+# Palabras prohibidas para TiendaBot: una por línea, en minúsculas.
+idiota
+imbécil
+estúpido
+tonto
+inútil
+basura
+mierda
+puta

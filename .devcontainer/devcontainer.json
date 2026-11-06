@@ -1,0 +1,24 @@
+{
+  "name": "TiendaBot",
+  "image": "ghcr.io/v1cz/aiengineer-tutor:latest",
+  "remoteUser": "alumno",
+  "customizations": {
+    "vscode": {
+      "extensions": ["anthropic.claude-code", "ms-python.python"],
+      "settings": {
+        "claudeCode.disableLoginPrompt": true,
+        "files.exclude": {
+          ".devcontainer": true,
+          "tests": true,
+          "pytest.ini": true,
+          ".gitignore": true,
+          "**/__pycache__": true,
+          "**/.pytest_cache": true
+        }
+      }
+    },
+    "codespaces": {
+      "openFiles": ["README.md", "tickets/01-limpiar-y-validar.md"]
+    }
+  }
+}
