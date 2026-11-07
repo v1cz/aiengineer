@@ -14,7 +14,11 @@ def main() -> None:
 
     print("MercaBot · escribe 'salir' para terminar\n")
     while True:
-        mensaje = normalizar(input("Tú: "))
+        try:
+            mensaje = normalizar(input("Tú: "))
+        except (KeyboardInterrupt, EOFError):  # Ctrl+C o Ctrl+D
+            print()
+            break
         if mensaje == "salir":
             break
         if not es_valido(mensaje):
@@ -28,6 +32,9 @@ def main() -> None:
             except Exception:
                 respuesta = "Lo siento, ahora no puedo responder. Inténtalo en un momento."
             print(f"MercaBot: {respuesta}\n")
+
+    print("MercaBot: ¡Hasta pronto! 👋")
+    print("🎉 Has lanzado MercaBot. Puedes cerrar la pestaña: el Codespace se apaga solo.")
 
 
 if __name__ == "__main__":
