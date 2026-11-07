@@ -8,7 +8,7 @@
 > antes hay que limpiarlo y comprobar que tiene sentido enviarlo.
 
 ## ✅ Criterios de aceptación
-- [ ] `normalizar("  Hola TiendaBot  ")` devuelve `"hola tiendabot"`: sin espacios en los extremos y en minúsculas.
+- [ ] `normalizar("  Hola MercaBot  ")` devuelve `"hola mercabot"`: sin espacios en los extremos y en minúsculas.
 - [ ] `es_valido(mensaje)` devuelve `True` si el mensaje **no** está vacío **y** tiene como mucho `LONGITUD_MAXIMA` (500) caracteres.
 - [ ] `pytest` muestra `TICKET-01 ✅ 4/4`.
 

@@ -1,5 +1,5 @@
 {
-  "name": "TiendaBot",
+  "name": "AI Engineer",
   "image": "ghcr.io/v1cz/aiengineer-tutor:latest",
   "remoteUser": "alumno",
   "customizations": {

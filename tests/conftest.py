@@ -81,7 +81,7 @@ def _lineas() -> list[str]:
             lineas.append(f"{cabecera} ❌ {ok}/{total}  → {primer_fallo}")
     if listos == len(TICKETS):
         lineas.append("")
-        lineas.append("🚀 ¡TiendaBot listo para lanzar! Prueba: python -m chatbot.main")
+        lineas.append("🚀 ¡MercaBot listo para lanzar! Prueba: python -m chatbot.main")
     return lineas
 
 
@@ -92,6 +92,6 @@ def pytest_sessionfinish(session):
 
 def pytest_terminal_summary(terminalreporter):
     if not _modo_alumno:
-        terminalreporter.write_sep("=", "TiendaBot")
+        terminalreporter.write_sep("=", "MercaBot")
         for linea in _lineas():
             terminalreporter.write_line(linea)

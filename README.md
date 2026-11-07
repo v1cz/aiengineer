@@ -1,6 +1,6 @@
-# 🤖 TiendaBot
+# 🤖 MercaBot
 
-Hoy empiezas como **AI engineer junior** en TiendaBot, una tienda online.
+Hoy empiezas como **AI engineer junior** en MercaBot, una tienda online.
 El chatbot de atención al cliente está casi listo, pero quedan **3 tickets** abiertos.
 
 **Tu misión:** cerrarlos y lanzar el bot. Tienes unos 30 minutos.

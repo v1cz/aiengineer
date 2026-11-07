@@ -2,8 +2,8 @@ from chatbot.validacion import es_valido, normalizar
 
 
 def test_normalizar():
-    '''"  Hola TiendaBot  " debería quedar "hola tiendabot" (sin espacios en los extremos y en minúsculas)'''
-    assert normalizar("  Hola TiendaBot  ") == "hola tiendabot"
+    '''"  Hola MercaBot  " debería quedar "hola mercabot" (sin espacios en los extremos y en minúsculas)'''
+    assert normalizar("  Hola MercaBot  ") == "hola mercabot"
     assert normalizar("\n¿Dónde está mi PEDIDO?\t") == "¿dónde está mi pedido?"
 
 

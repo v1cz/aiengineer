@@ -1,4 +1,4 @@
-# Palabras prohibidas para TiendaBot: una por línea, en minúsculas.
+# Palabras prohibidas para MercaBot: una por línea, en minúsculas.
 idiota
 imbécil
 estúpido

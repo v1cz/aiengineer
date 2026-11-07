@@ -3,7 +3,7 @@ import anthropic
 
 MODELO: str = "anthropic/claude-haiku-5.5"
 SISTEMA: str = (
-    "Eres el agente de atención al cliente de TiendaBot, una tienda online. "
+    "Eres el agente de atención al cliente de MercaBot, una tienda online. "
     "Responde en español, con amabilidad y en 2 o 3 frases."
 )
 

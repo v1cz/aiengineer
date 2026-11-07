@@ -1,4 +1,4 @@
-"""PROVISTO · TiendaBot. Ejecuta: python -m chatbot.main"""
+"""PROVISTO · MercaBot. Ejecuta: python -m chatbot.main"""
 from chatbot.validacion import normalizar, es_valido
 from chatbot.filtro import cargar_palabras_prohibidas, contiene_palabra_prohibida
 from chatbot.rutas import detectar_intencion
@@ -12,26 +12,26 @@ def main() -> None:
     contiene_palabra_prohibida("hola", prohibidas)
     detectar_intencion("hola")
 
-    print("TiendaBot · escribe 'salir' para terminar\n")
+    print("MercaBot · escribe 'salir' para terminar\n")
     while True:
         mensaje = normalizar(input("Tú: "))
         if mensaje == "salir":
             break
         if not es_valido(mensaje):
-            print("TiendaBot: Escribe un mensaje de hasta 500 caracteres, por favor.\n")
+            print("MercaBot: Escribe un mensaje de hasta 500 caracteres, por favor.\n")
         elif contiene_palabra_prohibida(mensaje, prohibidas):
-            print("TiendaBot: Prefiero que hablemos con respeto 🙂\n")
+            print("MercaBot: Prefiero que hablemos con respeto 🙂\n")
         else:
             tema = detectar_intencion(mensaje)
             try:
                 respuesta = preguntar(f"[Tema: {tema}] {mensaje}")
             except Exception:
                 respuesta = "Lo siento, ahora no puedo responder. Inténtalo en un momento."
-            print(f"TiendaBot: {respuesta}\n")
+            print(f"MercaBot: {respuesta}\n")
 
 
 if __name__ == "__main__":
     try:
         main()
     except NotImplementedError:
-        print("🚧 Termina los tickets para lanzar TiendaBot")
+        print("🚧 Termina los tickets para lanzar MercaBot")

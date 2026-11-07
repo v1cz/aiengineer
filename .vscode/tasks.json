@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "TiendaBot",
+      "label": "AI Engineer",
       "type": "shell",
       "command": "bash",
       "isBackground": true,

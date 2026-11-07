@@ -1,1 +1,1 @@
-"""TiendaBot: chatbot de atención al cliente."""
+"""MercaBot: chatbot de atención al cliente."""
