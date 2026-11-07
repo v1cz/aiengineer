@@ -6,9 +6,14 @@
     "vscode": {
       "extensions": ["anthropic.claude-code", "ms-python.python"],
       "settings": {
+        "workbench.startupEditor": "none",
+        "task.allowAutomaticTasks": "on",
         "claudeCode.disableLoginPrompt": true,
+        "claudeCode.preferredLocation": "sidebar",
+        "claudeCode.hideOnboarding": true,
         "files.exclude": {
           ".devcontainer": true,
+          ".vscode": true,
           "tests": true,
           "pytest.ini": true,
           ".gitignore": true,
